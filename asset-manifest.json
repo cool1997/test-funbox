@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.18496959.chunk.css",
+    "main.js": "/static/js/main.6291aa8f.chunk.js",
+    "main.js.map": "/static/js/main.6291aa8f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.87887fdf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.87887fdf.js.map",
+    "static/js/2.9128de41.chunk.js": "/static/js/2.9128de41.chunk.js",
+    "static/js/2.9128de41.chunk.js.map": "/static/js/2.9128de41.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9e1753957927fd6c441ef94f319da615.js": "/precache-manifest.9e1753957927fd6c441ef94f319da615.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.18496959.chunk.css.map": "/static/css/main.18496959.chunk.css.map",
+    "static/js/2.9128de41.chunk.js.LICENSE.txt": "/static/js/2.9128de41.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/Exo2.0-Thin.44bde874.otf",
+    "static/media/funbox_cat-logo.png": "/static/media/funbox_cat-logo.36fdd8e3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87887fdf.js",
+    "static/js/2.9128de41.chunk.js",
+    "static/css/main.18496959.chunk.css",
+    "static/js/main.6291aa8f.chunk.js"
+  ]
+}
