@@ -72,7 +72,8 @@ const Card = ({contains, portionsPerPack, gift, size, tagline, quantity, ...prop
                     <p className={styles.feature}>{`c ${contains}`}</p>
                     <div className={styles.gift}>
                         <p>{`${portionsPerPack} порций`}</p> 
-                        {`${giftText}`}
+                        <p>{`${giftText}`}</p>
+                        <p>{`${gift > 4 ? `заказчик доволен` : ``}`}</p>
                     </div>
                     <img className={styles.logoImg} src={require('../../assets/img/funbox_cat-logo.png')} alt={`cat with logo`}/>
                     <div className={styles.size}>{`${size}`}
