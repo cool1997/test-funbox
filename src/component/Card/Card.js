@@ -11,10 +11,7 @@ const Card = ({contains, portionsPerPack, gift, size, tagline, quantity, ...prop
 
 
     useEffect(() => {
-        if(checked) {
-            setDescription(`Котэ не одобряет?`)
-            setIsCheckAndFicus(true)
-        } else {
+        if(!checked) {
             setDescription(`Сказочное заморское яство`)
             setIsCheckAndFicus(false)
         }
@@ -49,8 +46,23 @@ const Card = ({contains, portionsPerPack, gift, size, tagline, quantity, ...prop
 
 
     return (
-        <li className={`${styles.Card} ${props.className} ${!quantity ? `disabled ${styles.disabled}` : ``} ${checked ? `selected` : ``}`}>
-            <label className={`${styles.body} ${isCheckAndFicus ? `${styles.focus}` : ``}`} onMouseOver={handleFocus} onMouseOut={handleBlur}>
+        <li 
+            className={`
+                ${styles.Card} 
+                ${!quantity 
+                    ? `disabled ${styles.disabled}` 
+                    : ``} 
+                ${checked 
+                    ? `selected` 
+                    : ``}`}>
+            <label 
+                onMouseEnter={handleFocus} 
+                onMouseLeave={handleBlur}     
+                className={`
+                    ${styles.body} 
+                    ${isCheckAndFicus 
+                        ? `${styles.focus}` 
+                        : ``}`}>
                 <div className={styles.top}>
                     <span className={styles.corner}></span>
                     <span className={styles.description}>{description}</span>
