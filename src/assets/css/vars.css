@@ -1,0 +1,26 @@
+:root {
+  --font_main_color: #000000;
+  --font_light_color: #666666;
+  --font_contrast_color: #ffffff;
+  --font_contrast_additional_color: #ffffff;
+  
+  --main_color: #f2f2f2;
+
+  --contrast_color: #1698d9;
+  --contrast_hover_color: #2ea8e6;
+}
+
+.selected {
+  --contrast_color: #d91667;
+  --contrast_hover_color: #e62e7a;
+}
+
+.disabled {
+  --font_main_color: #b3b3b3;
+  --font_light_color: #b3b3b3;
+  --font_contrast_additional_color: #ffff66;
+
+
+  --contrast_color: #b3b3b3;
+  --contrast_hover_color: #b3b3b3;
+}

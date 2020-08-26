@@ -1,0 +1,175 @@
+.Card {
+    width: 320px;
+    margin: 0 20px 40px;
+
+    &.disabled {
+        & .body {
+            cursor: auto;
+
+            & .main { 
+                & .logoImg {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    & .body {
+        display: flex;
+        flex-direction: column;
+        height: 480px;
+        margin-bottom: 15px;
+
+        color: var(--font_main_color);
+
+        cursor: pointer;
+
+        &.focus {
+            & .top {
+                & .description {
+                    color: var(--contrast_hover_color);
+                }
+            }
+        }
+
+        &:hover {
+            & .top {
+                & .corner {
+                    background: linear-gradient(-45deg, var(--main_color),var(--main_color) 28px, var(--contrast_hover_color) 0, var(--contrast_hover_color) 32px, transparent 0);
+                }
+                & .description {
+                    border: 4px solid var(--contrast_hover_color);
+                    border-bottom: none;
+                    border-left: none;
+                }
+            }
+            & .main {
+                border: 4px solid var(--contrast_hover_color);
+                border-top: none;
+
+                & .size {
+                    background: var(--contrast_hover_color);
+                }
+            }
+
+            & + .footer {
+                & .buy {
+                    color: var(--contrast_hover_color);
+                }
+            }
+        }
+
+        & .top {
+            display: flex;
+            height: 44px;
+
+            & .corner {
+                width: 44px;
+                position: relative;
+                background: linear-gradient(-45deg, var(--main_color),var(--main_color) 28px, var(--contrast_color) 0, var(--contrast_color) 32px, transparent 0);
+            }
+
+            & .description {
+                flex-grow: 1;
+                padding: 15px 0 0 8px;
+
+                border: 4px solid var(--contrast_color);
+                border-bottom: none;
+                border-left: none;
+                border-radius: 0 10px 0 0;
+                
+                background: var(--main_color);
+                color: var(--font_light_color);
+            }
+        }
+
+        & .main {
+            flex-grow: 1;
+            overflow: hidden;
+            padding: 0 46px;
+            position: relative;
+
+            border: 4px solid var(--contrast_color);
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+
+            background-color: var(--main_color);
+        
+            & .title {
+                font-size: 48px;
+                line-height: 55px;
+                font-weight: 600;
+            }
+            
+            & .feature {
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+
+                margin-bottom: 15px;
+            }
+
+            & .gift {
+                color: var(--font_light_color);
+                font-size: 14px;
+                line-height: 16px;
+
+            }
+
+            & .size {
+                position: absolute;
+                bottom: 16px;
+                right: 16px;
+
+                width: 80px;
+                height: 80px;
+                padding-top: 20px;
+
+                border-radius: 50%;
+                background: var(--contrast_color);
+                
+                color: var(--font_contrast_color);
+                text-align: center;
+                font-size: 42px;
+                line-height: 22px;
+
+                & .measure {
+                    padding-top: 10px;
+
+                    font-size: 21px;
+                    line-height: 22px;
+                }
+            }
+
+            & .logoImg {
+                max-width: 370px;
+                position: absolute;
+                bottom: -95px;
+                left: -25px;
+            }
+        }
+    }
+    & .footer {
+        color: var(--font_contrast_additional_color);
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+
+        & .buy {
+            color: var(--contrast_color);
+
+            & .buyBtn {
+                border: none;
+                padding: 0;
+                border-bottom: 1px dashed currentColor;
+                margin-bottom: -1px;
+
+                background: transparent;
+                color: inherit;
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+  
